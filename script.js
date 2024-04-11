@@ -1,3 +1,3 @@
-relay = require("nostr-relay")
+relay = require("nostr-relay");
 
 relay.world();
