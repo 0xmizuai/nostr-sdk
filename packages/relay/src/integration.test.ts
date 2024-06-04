@@ -5,8 +5,8 @@ import { senderSchema } from "nostr-messages/sender";
 
 describe("relay", () => {
   // TODO(wangjun.hong): fix integration test
-  test.skip("integration", async () => {
-    const relay = await Relay.connect("ws://127.0.0.1:3030");
+  test("integration", async () => {
+    const relay = await Relay.connect("ws://127.0.0.1:3033");
     // console.log(`connected to ${relay.url}`);
 
     // let's publish a new event while simultaneously monitoring the relay for it

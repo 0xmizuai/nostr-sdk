@@ -239,7 +239,7 @@ export class Relay {
     const ret = new Promise<string>((resolve, reject) => {
       this.openEventPublishes.set(event.id, { resolve, reject });
     });
-    this.send(`["EVENT"${JSON.stringify(event)}]`);
+    this.send(`["EVENT", ${JSON.stringify(event)}]`);
     return ret;
   }
 
